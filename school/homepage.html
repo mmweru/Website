@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="homepage.html">HOME</a></li>
+                    <li><a href="management.html">MANAGEMENT</a></li>
+                    <li><a href="department.html">ACADEMICS</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" style="size: 100px;"></i>
+
+        </nav>
+        <div class="text-box">
+            <h1>Kenya's Top University</h1>
+            <p>
+                Discover Excellence, Define Tomorrow: Moi university a place where rigor blends seamlessly with an inclusive and,<br> forward-thinking atmosphere. The foundation of knowledge.
+            </p>
+            <a href="" class="hero-btn">Visit Us To know More</a>
+        </div>
+
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "1px"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-500px";
+        }
+    </script>
+</body>
+</html>
